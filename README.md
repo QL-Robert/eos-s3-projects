@@ -5,7 +5,7 @@ entirely with open-source tools on macOS (Apple Silicon) or Linux.
 
 | Project | What it does | Boards |
 |---|---|---|
-| `designs/blinky` | Cycles the RGB LED red → green → blue every 0.5 s (FPGA only) | Qomu, QuickFeather |
+| `designs/blinky` | Cycles the RGB LED red → yellow → green, 1 s each (FPGA only) | Qomu, QuickFeather |
 | `designs/rainbow` | Smooth PWM color wheel you control with the touch pads / USR button (FPGA only) | Qomu, QuickFeather |
 | `firmware/qf_hello` | M4 firmware: USB-serial command line, USR button cycles the LED color | QuickFeather |
 

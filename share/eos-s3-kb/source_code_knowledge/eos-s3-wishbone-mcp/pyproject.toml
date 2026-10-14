@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "eos-s3-wishbone-mcp"
+version = "0.1.0"
+description = "MCP server: QuickLogic EOS S3 eFPGA AHB-to-Wishbone interface reference, checks and Verilog slave generator"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.2,<2"]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4"]
+
+[project.scripts]
+eos-s3-wishbone-mcp = "eos_s3_wishbone_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/eos_s3_wishbone_mcp"]

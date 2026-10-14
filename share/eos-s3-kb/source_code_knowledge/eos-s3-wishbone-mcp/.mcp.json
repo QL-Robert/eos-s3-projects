@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "eos-s3-wishbone": {
+      "type": "stdio",
+      "command": "uv",
+      "args": ["run", "--directory", "${EOS_S3_MCP_DIR:-.}", "eos-s3-wishbone-mcp"],
+      "env": {
+        "EOS_S3_TRM_PDF": "${EOS_S3_TRM_PDF:-}"
+      }
+    }
+  }
+}
